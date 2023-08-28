@@ -1,0 +1,20 @@
+.card {
+  @apply font-bold border-0 rounded-[4px] cursor-pointer
+  shadow-[0_4px_20px_1px_rgba(0,0,0,.06),0_1px_4px_rgba(0,0,0,.08)] flex items-center
+  justify-between px-[20px] py-[10px] mb-[15px] h-[105px] w-[200px] bg-[white] rounded-[6px] border-b-[3px]
+  border-[white] border-solid;
+}
+.card-content {
+  @apply text-center;
+}
+.card h5 {
+  @apply text-[12px] text-[#919191] font-[600] mb-[.5rem];
+}
+.card span {
+  @apply text-[18px] font-[600] leading-[1];
+}
+.card svg {
+  @apply text-[#444] relative text-[35px] ml-[5px];
+}
+
+/*# sourceMappingURL=Card.css.map */

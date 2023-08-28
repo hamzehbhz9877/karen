@@ -1,0 +1,17 @@
+//danger
+$danger-color: #721c24;
+$danger-bg: #f8d7da;
+$danger-border: #f5c6cb;
+
+.alert {
+  padding: 0.75rem 1.25rem ;
+  position: relative;
+  border-radius: 0.25rem;
+  @apply mb-[20px];
+  &--danger {
+    color: $danger-color;
+    background-color: $danger-bg;
+    border-color: $danger-border;
+  }
+
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+.column {
+  background: #fff;
+  border-left: 2px solid #dcdcdc;
+  box-shadow: -1px 0 5px #ddd;
+  border-right: 0;
+  min-width: 252px;
+}
+.column ul {
+  margin: 0;
+  padding: 0;
+  height: 829px;
+  overflow-y: auto;
+  list-style: none;
+}
+.column:last-child {
+  border-right: 0;
+}
+.column:nth-child(1) .search {
+  display: none;
+}
+.column:first-child li:before {
+  content: "داخلی";
+}
+.column:first-child li:nth-child(n+8):nth-child(-n+18):before {
+  content: "جهانی";
+  background: #e4f1dc;
+}
+.column li {
+  cursor: pointer;
+  padding: 10px 29px 10px 37px !important;
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.column li:hover {
+  background: #eee;
+}
+.column li svg {
+  position: absolute !important;
+  left: 7px;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.column li.active {
+  background: #fa9604;
+  color: #fff;
+}
+.column li:before {
+  display: block;
+  position: absolute;
+  top: 7px;
+  font-size: 11px;
+  left: 24px;
+  color: #888;
+  background: #ffefd5;
+  padding: 3px 8px 5px;
+  border-radius: 4px;
+  width: 42px;
+}
+.column .search {
+  padding: 3px !important;
+  font-size: 12px;
+}
+.column .search input {
+  padding: 7px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.empty-index-selection {
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.right-icon {
+  position: absolute !important;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=columns.css.map */

@@ -1,0 +1,46 @@
+.tabs {
+  @apply list-none flex;
+}
+.tabs li + li {
+  @apply mr-[10px];
+}
+.tabs .tabs__item {
+  @apply rounded-[4px] py-[5px]  px-[15px]  text-[#212529] bg-[#f4f5f7]
+    border-[#f4f5f7]  font-semibold  cursor-pointer no-underline;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.tabs .tabs__item:hover {
+  @apply text-[#fff] bg-[#f8931d] border-[#f8931d];
+}
+.tabs .tabs__item svg {
+  @apply relative ml-[5px];
+}
+.tabs .tabs__item--active {
+  @apply text-[#fff] bg-[#f8931d] border-[#f8931d];
+}
+.tabs .tabs__item--disActive {
+  @apply text-[#212529] bg-[#f4f5f7] border-[#f4f5f7];
+}
+.tabs .tabs__item--disActive:hover {
+  @apply text-[#fff] bg-[#f8931d] border-[#f8931d];
+}
+.tabs--small {
+  @apply text-[12px] py-[10px] px-[16px];
+}
+.tabs--small svg {
+  @apply text-[14px];
+}
+.tabs--medium {
+  @apply text-[14px] py-[11px] px-[14px];
+}
+.tabs--medium svg {
+  @apply text-[16px];
+}
+.tabs--large {
+  @apply text-[16px] py-[12px] px-[24px];
+}
+.tabs--large svg {
+  @apply text-[18px];
+}
+
+/*# sourceMappingURL=Tab.css.map */

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: IranYekan;
+    src: local("IranYekan"), url("../fonts/iranyekanwebregular(fanum).woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html ,body{
+    direction: rtl;
+    font-family: IranYekan !important;
+}
+
+svg {
+    vertical-align: middle !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, h1, h2, h3, h4, h5, h6 {
+
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.loose{
+    color: red;
+}
+.profit{
+    color: green;
+}
+.neutral{
+    color: #191919;
+}
+
+
+/*Modal*/
+.buy .modal{width: 530px;}
+.sell .modal{width: 580px;}
+.index-selection .modal{
+    width: 1100px;
+    min-width: 1100px;
+    padding-bottom: 0;
+}
+
+
+/*toast*/
+.toast-font{
+    font-family: 'IranYekan' !important;
+}

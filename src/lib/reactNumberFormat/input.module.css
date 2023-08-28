@@ -1,0 +1,17 @@
+.input {
+  @apply grow;
+}
+.input input {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  line-height: 1.9;
+  height: 50px;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=input.module.css.map */

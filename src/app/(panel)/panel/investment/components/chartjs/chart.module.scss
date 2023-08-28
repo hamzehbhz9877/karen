@@ -1,0 +1,12 @@
+.chart{
+  padding:10px 10px 5px 10px;
+  min-height: 400px;
+  height: 400px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px 1px rgba(0, 0, 0, .06), 0 1px 4px rgba(0, 0, 0, .08) !important;
+  border: 0 !important;
+  background-color: #fff;
+  border-radius: 6px;
+}

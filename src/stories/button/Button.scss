@@ -1,0 +1,40 @@
+.button {
+  @apply font-bold border-0 rounded-[4px] cursor-pointer inline-block;
+  &.button--success{
+    color: #fff;
+    background-color: #33ae9f;
+    border-color: #33ae9f;
+  }
+  &.button--danger{
+    color: #fff;
+    background-color: #e63946;
+    border-color: #e63946;
+  }
+  svg{
+    @apply relative ml-[5px];
+  }
+  &--primary{
+    @apply text-white bg-[#1ea7fd];
+   }
+  &--secondary {
+    @apply text-[#333] bg-transparent shadow-[rgba(0,0,0,0.15)_0px_0px_0px_1px_inset];
+  }
+  &--small {
+    @apply text-[12px] py-[10px] px-[16px];
+    svg{
+      @apply  text-[14px];
+    }
+  }
+  &--medium {
+    @apply text-[14px] py-[11px] px-[14px];
+    svg{
+      @apply  text-[16px];
+    }
+  }
+  &--large {
+    @apply text-[16px] py-[12px] px-[24px];
+    svg{
+      @apply  text-[18px];
+    }
+  }
+}

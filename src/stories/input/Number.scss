@@ -1,0 +1,57 @@
+$input-border-color: #c7cad5;
+$input-bg: white;
+$input-bg--hover: #f4f5f7;
+$input-line-height: 1.9;
+$input-margin-bottom: 2rem;
+
+  .input-number {
+    input{
+      height: 46px;
+      background-color: $input-bg;
+      border: 1px solid $input-border-color;
+      line-height: $input-line-height;
+      font-weight: 600;
+      width: -webkit-fill-available;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      &:hover {
+        background-color: $input-bg--hover;
+      }
+      &:focus{
+        background-color: $input-bg--hover;
+      }
+    }
+    label{
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    &--small {
+      input {
+        @apply text-[12px] py-[3px] px-[10px] h-[33px];
+      }
+
+      label {
+        @apply text-[12px];
+      }
+    }
+
+    &--medium {
+      input {
+        @apply text-[14px] py-[4px] px-[12px] h-[44px];
+      }
+
+      label {
+        @apply text-[14px];
+      }
+    }
+
+    &--large {
+      input{
+        @apply text-[18px] py-[5px] px-[14px] h-[55px];
+      }
+
+      label {
+        @apply text-[16px];
+      }
+    }
+  }

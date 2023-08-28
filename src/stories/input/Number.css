@@ -1,0 +1,39 @@
+.input-number input {
+  width: 100%;
+  height: 46px;
+  background-color: white;
+  border: 1px solid #c7cad5;
+  line-height: 1.9;
+  font-weight: 600;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.input-number input:hover {
+  background-color: #f4f5f7;
+}
+.input-number input:focus {
+  background-color: #f4f5f7;
+}
+.input-number label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.input-number--small input {
+  @apply text-[12px] py-[3px] px-[10px] h-[33px];
+}
+.input-number--small label {
+  @apply text-[12px];
+}
+.input-number--medium input {
+  @apply text-[14px] py-[4px] px-[12px] h-[44px];
+}
+.input-number--medium label {
+  @apply text-[14px];
+}
+.input-number--large input {
+  @apply text-[18px] py-[5px] px-[14px] h-[55px];
+}
+.input-number--large label {
+  @apply text-[16px];
+}
+
+/*# sourceMappingURL=Number.css.map */

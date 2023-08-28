@@ -1,0 +1,49 @@
+.investmentWidget {
+  background: #fff;
+  box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  padding: 15px;
+  position: relative;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.investmentWidgetContent {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+}
+
+.investmentWidgetTabs {
+  @apply flex justify-between items-center  mt-[10px];
+}
+
+.investmentWidgetTabsNav {
+  display: block;
+}
+@media (max-width: 991.98px) {
+  .investmentWidgetTabsNav {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .investmentWidgetTabsButton {
+    width: 100%;
+    display: flex;
+  }
+  .investmentWidgetTabsButton a, .investmentWidgetTabsButton button {
+    width: 100%;
+  }
+}
+
+.buyBtn {
+  width: 120px;
+}
+
+.sellBtn {
+  width: 120px;
+  @apply mr-[10px];
+}
+
+/*# sourceMappingURL=header.module.css.map */

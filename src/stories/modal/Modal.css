@@ -1,0 +1,45 @@
+.modal {
+  @apply rounded-[0.5rem] px-[1.5rem] py-[1em] mx-auto right-0 left-0 h-max bg-white max-w-[85%]
+  shadow-[0_0_10px_-5px] w-[650px] relative
+  z-[100];
+}
+.modal__header {
+  @apply text-center;
+}
+.modal__header {
+  @apply mb-5 flex items-center justify-between;
+}
+.modal__header svg {
+  @apply text-[27px];
+}
+.modal__header h3 {
+  @apply text-[18px] font-bold;
+}
+.modal__footer {
+  @apply mt-3;
+}
+.modal__footer.text-center {
+  text-align: center;
+}
+.modal__footer.text-right {
+  text-align: right;
+}
+.modal__footer.text-left {
+  text-align: left;
+}
+
+.overlay {
+  @apply fixed inset-0 flex overflow-y-auto py-[3rem] bg-[rgb(0,0,0,0.51)]
+  z-[99];
+  transition: all 0.1s ease;
+}
+
+.loading-overlay {
+  @apply absolute inset-0 grid content-center;
+}
+.loading-overlay:before {
+  content: "";
+  @apply absolute inset-0 bg-[rgb(0,0,0,0.28)];
+}
+
+/*# sourceMappingURL=Modal.css.map */

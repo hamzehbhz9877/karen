@@ -1,0 +1,21 @@
+$input-border-color: #ddd;
+$input-bg: white;
+$input-line-height: 1.9;
+$input-margin-bottom: 2rem;
+$padding:12px 20px;
+
+.input {
+  @apply grow;
+  input {
+    width: 100%;
+    padding: $padding;
+    background-color: $input-bg;
+    border: 1px solid $input-border-color;
+    line-height: $input-line-height;
+    height: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,107 @@
+.overflow {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.widget {
+  margin-bottom: 20px;
+}
+.widget-wrapper {
+  box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+  border: 0 !important;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.widget__header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  color: #444;
+  padding: 0 13px;
+}
+.widget__header h3 {
+  padding: 10px 0;
+  font-size: 13px;
+  color: #6c757d;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+}
+.widget__header h3:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+  bottom: 0;
+  height: 3px;
+  display: inline-block;
+  background: #ef8331;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.widget__bottom {
+  min-width: max-content;
+}
+
+.table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+}
+.table__noinfo {
+  padding: 30px;
+  @apply flex flex-col;
+}
+.table__noinfo span {
+  letter-spacing: 0;
+  color: #c8c8c8;
+  margin-bottom: 15px;
+  height: 100%;
+  font-size: 12px;
+}
+.table__noinfo svg {
+  text-align: center;
+  font-size: 80px;
+  padding: 15px;
+  padding-bottom: 0;
+  color: #c8c8c8;
+}
+.table thead {
+  @apply bg-white;
+}
+.table thead th {
+  background: unset !important;
+  padding: 10px 15px;
+  height: 39px;
+  font-weight: 500 !important;
+  white-space: nowrap;
+  color: #666 !important;
+  border-bottom: 1px solid #e6e6e6;
+}
+.table tbody td {
+  border-left: 1px solid #ececec;
+  height: 50px;
+  border-bottom: 1px solid #ececec;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 1;
+}
+.table tbody td:first-child {
+  max-width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.table tbody td:last-child {
+  border-left: unset !important;
+}
+
+@media only screen and (max-width: 1080px) {
+  td.hide, th.hide {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=Table.css.map */

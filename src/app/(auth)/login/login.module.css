@@ -1,0 +1,64 @@
+.login {
+  @apply absolute inset-0 flex;
+}
+.login .bg {
+  background-image: url("../../../images/auth-cover1.svg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 767.98px) {
+  .login .bg {
+    display: none;
+  }
+}
+.login .bg:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(255, 175, 70, 0), #191919 100%);
+}
+.login .loginWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+.login .loginInputs {
+  width: 90%;
+  max-width: 350px;
+}
+.login .phoneTitle {
+  display: block;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 14px;
+}
+.login .phoneBox {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.login .phoneFlag {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding: 0 10px 0 13px;
+  border-right: 1px solid #e9ecef;
+  background-color: #e9ecef;
+}
+.login .loginButton {
+  @apply font-bold py-4 rounded bg-[#0d3d62] text-white w-[100%];
+}
+.login .loginButton:hover {
+  @apply bg-[#3878a9];
+}
+
+/*# sourceMappingURL=login.module.css.map */
